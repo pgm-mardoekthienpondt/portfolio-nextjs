@@ -38,7 +38,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
       <div className={styles.card__image}>
         <Image
           className="object-cover ml-auto"
-          src={`/img/projects/${project.picture}`}
+          src={`./img/projects/${project.picture}`}
           alt="img not found"
           width={500}
           height={500}
