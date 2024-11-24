@@ -5,7 +5,7 @@ import useFetch from '@/lib/hooks/useFetch';
 import ProjectCard from './components/ProjectCard';
 import styles from '@/app/components/styles/Main.module.css';
 export default function Home() {
-  const { data, error } = useFetch<{ projects: Project[] }>('./portfolio.json');
+  const { data, error } = useFetch<{ projects: Project[] }>('/portfolio.json');
 
   if (error) {
     console.error('Error fetching projects:', error);
