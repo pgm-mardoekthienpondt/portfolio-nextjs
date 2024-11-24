@@ -1,17 +1,28 @@
 'use client';
 import { Project } from '@/types/Project';
-import useFetch from '@/lib/hooks/useFetch';
+import { InferGetStaticPropsType, GetStaticProps } from 'next';
 
 import ProjectCard from './components/ProjectCard';
 import styles from '@/app/components/styles/Main.module.css';
-export default function Home() {
-  const { data, error } = useFetch<{ projects: Project[] }>('/portfolio.json');
+export const getStaticProps: GetStaticProps = async () => {
+  const res = await fetch('https://your-api-endpoint/portfolio.json');
+  const data = await res.json();
 
-  if (error) {
-    console.error('Error fetching projects:', error);
-    return <p>Error loading projects.</p>;
+  if (!data) {
+    return {
+      notFound: true,
+    };
   }
 
+  return {
+    props: {
+      projects: data.projects,
+    },
+  };
+};
+export default function Page({
+  projects,
+}: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div
       className="container mx-auto max-w-screen-xl px-3 py-4"
@@ -21,8 +32,8 @@ export default function Home() {
         PORTFOLIO
       </h1>
       <ul className="flex flex-wrap justify-evenly gap-4 border-gray-300 p-4">
-        {data?.projects.map(
-          (project) =>
+        {projects.map(
+          (project: Project) =>
             project.link && <ProjectCard key={project.id} project={project} />
         )}
       </ul>
