@@ -96,7 +96,7 @@ export default function Home() {
       </section>
       <footer className="my-24">
         <p className="text-center font-mono text-3xl">
-          Website made with NextJS by Mardoek Thienpondt and deployed on Github. You can find the repo <a className="underline text-blue-300" href='https://github.com/pgm-mardoekthienpondt/portfolio-nextjs'>here</a>.
+          Website made with NextJS by Mardoek Thienpondt and deployed on Github. You can find the repo <a className="underline text-blue-700" href='https://github.com/pgm-mardoekthienpondt/portfolio-nextjs'>here</a>.
         </p>
       </footer>
     </div>
