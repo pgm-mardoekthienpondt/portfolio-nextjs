@@ -1,0 +1,83 @@
+{
+  "projects": [
+    {
+      "id": "@work1-lightopia",
+      "title": "Lightopia",
+      "synopsis": "Informative webapp for Lightopia",
+      "picture": "atwork-lightopia2.png",
+      "subject": "@work1",
+      "category": "@work",
+      "description": "A webapp for a light-festival called Lightopia. The design is provided by core-graphics.be and implemented by me.",
+      "devstack": ["HTML", "JavaScript", "CSS"],
+      "link": "https://pgmgent-atwork-1.github.io/opdracht-1-lightopia-pgm-mardoekthienpondt/",
+      "color": "#00423f"
+    },
+    {
+      "id": "@work1-schrauwen-groen",
+      "title": "Schrauwen Groen",
+      "synopsis": "Informative webapp for Schrauwen Groen",
+      "picture": "atwork-schrauwen-groen2.png",
+      "subject": "@work1",
+      "category": "@work",
+      "description": "A webapp for Schrauwen Groen. The design is provided by De Formatie and implemented by me.",
+      "devstack": ["HTML", "JavaScript", "CSS"],
+      "link": "https://pgmgent-atwork-1.github.io/opdracht-1-schrauwen-groen-pgm-mardoekthienpondt/"
+    },
+    {
+      "id": "web-1",
+      "title": "She Code Africa",
+      "synopsis": "Informative webapp for She Code Africa",
+      "picture": "web-she-code-africa2.png",
+      "subject": "webdesign-1",
+      "category": "webdesign",
+      "description": "An implementation of a design for She Code Africa. With focus on css, html & responsiveness.",
+      "devstack": ["HTML", "CSS"],
+      "link": "https://pgm-mardoekthienpondt.github.io/webdesign-opdracht2_she-code-africa/"
+    },
+    {
+      "id": "pgm-4-pgm-platform",
+      "title": "WE ARE PGM",
+      "synopsis": "Informative webapp for PGM",
+      "picture": "pgm-we-are-pgm2.png",
+      "subject": "pgm-4",
+      "category": "pgm",
+      "description": "A webapp highlighting our programming course curriculum. It is made in React, uses graphql and is deployed on render.com.",
+      "devstack": ["React", "GraphQL", "Hygraph"],
+      "link": "https://pgm-platform-pgm-mardoekthienpondt.onrender.com/"
+    },
+    {
+      "id": "pgm-1-afstudeerprojecten",
+      "title": "Afstudeerprojecten",
+      "synopsis": "Portfolio for PGM",
+      "picture": "pgm-afstudeerprojecten2.png",
+      "subject": "pgm-1",
+      "category": "pgm",
+      "description": "A showcase of manipulating DOM-elements with javascript and implementing basic design.",
+      "devstack": ["HTML", "CSS", "JavaScript"],
+      "link": "https://pgm-mardoekthienpondt.github.io/pgm-1-afstudeerprojecten/",
+      "color": "#6b5ce5"
+    },
+    {
+      "id": "pgm-3",
+      "title": "To Do App",
+      "picture": "pgm-3.jpg",
+      "subject": "pgm-3",
+      "category": "pgm",
+      "description": "A simple To Do application",
+      "devstack": ["JavaScript", "Knex"]
+    },
+
+    {
+      "id": "pgm-5",
+      "title": "Language Learner",
+      "synopsis": "Learn a language fast & efficient",
+      "picture": "pgm-language-learner.png",
+      "subject": "Subject 5",
+      "category": "Category 5",
+      "description": "A NextJS fullstack app with Strapi as backend. It is a language learning app that uses spaced repetition to help you learn a language.",
+      "devstack": ["NextJS", "Strapi", "GraphQL"],
+      "link": "#",
+      "color": "#d6d9e1"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+.tagsContainer{
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    max-width: 37.5rem;
+}
+.tagsContainer li{
+    background-color: rgba(61, 122, 67, 0.8);
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
