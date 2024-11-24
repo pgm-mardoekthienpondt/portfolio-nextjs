@@ -1,28 +1,17 @@
 'use client';
 import { Project } from '@/types/Project';
-import { InferGetStaticPropsType, GetStaticProps } from 'next';
+import useFetch from '@/lib/hooks/useFetch';
 
 import ProjectCard from './components/ProjectCard';
 import styles from '@/app/components/styles/Main.module.css';
-export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch('https://your-api-endpoint/portfolio.json');
-  const data = await res.json();
+export default function Home() {
+  const { data, error } = useFetch<{ projects: Project[] }>('/portfolio.json');
 
-  if (!data) {
-    return {
-      notFound: true,
-    };
+  if (error) {
+    console.error('Error fetching projects:', error);
+    return <p>Error loading projects.</p>;
   }
 
-  return {
-    props: {
-      projects: data.projects,
-    },
-  };
-};
-export default function Page({
-  projects,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
   return (
     <div
       className="container mx-auto max-w-screen-xl px-3 py-4"
@@ -32,8 +21,8 @@ export default function Page({
         PORTFOLIO
       </h1>
       <ul className="flex flex-wrap justify-evenly gap-4 border-gray-300 p-4">
-        {projects.map(
-          (project: Project) =>
+        {data?.projects.map(
+          (project) =>
             project.link && <ProjectCard key={project.id} project={project} />
         )}
       </ul>
@@ -109,7 +98,4 @@ export default function Page({
         <p className="text-center font-mono text-3xl">
           Website made with NextJS by Mardoek Thienpondt
         </p>
-      </footer>
-    </div>
-  );
-}
+className="text-center font-mono text-3xl">Website made with NextJS by Mardoek Thienpondt</p>
