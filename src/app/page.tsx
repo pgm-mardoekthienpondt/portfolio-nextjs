@@ -1,6 +1,6 @@
 'use client';
 import { Project } from '@/types/Project';
-import useFetch from '../lib/hooks/useFetch';
+import useFetch from '@/lib/hooks/useFetch';
 
 import ProjectCard from './components/ProjectCard';
 import styles from '@/app/components/styles/Main.module.css';
