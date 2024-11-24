@@ -98,4 +98,7 @@ export default function Home() {
         <p className="text-center font-mono text-3xl">
           Website made with NextJS by Mardoek Thienpondt
         </p>
-className="text-center font-mono text-3xl">Website made with NextJS by Mardoek Thienpondt</p>
+      </footer>
+    </div>
+  );
+}

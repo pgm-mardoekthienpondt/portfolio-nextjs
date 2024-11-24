@@ -1,8 +1,8 @@
 import { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  basePath: "/portfolio-nextjs",
-  output: "export",
+  // basePath: "/portfolio-nextjs",
+  // output: "export",
   reactStrictMode: true,
 };
 
