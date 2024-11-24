@@ -14,13 +14,13 @@ export default function Home() {
 
   return (
     <div
-      className="container mx-auto max-w-screen-xl px-3 py-4"
+      className="container mx-auto max-w-screen-xl py-4"
       style={{ backgroundColor: '#cccccc' }}
     >
       <h1 className="text-4xl font-bold text-center mb-8 font-mono">
         PORTFOLIO
       </h1>
-      <ul className="flex flex-wrap justify-evenly gap-4 border-gray-300 p-4">
+      <ul className="flex flex-wrap justify-evenly gap-4 border-gray-300 py-4">
         {data?.projects.map(
           (project) =>
             project.link && <ProjectCard key={project.id} project={project} />

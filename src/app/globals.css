@@ -88,13 +88,6 @@ h6 {
   }
 }*/
 
-@media (prefers-color-scheme: light) {
-  :root {
-    --background: #ededed;
-    --foreground: #0a0a0a;
-  }
-}
-
 
 body {
   color: var(--foreground);
