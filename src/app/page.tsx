@@ -89,12 +89,15 @@ export default function Home() {
               <li>Docker</li>
               <li>Teams</li>
               <li>VS Code</li>
+              <li>Github Copilot</li>
             </ul>
           </li>
         </ul>
       </section>
       <footer className="mt-96">
-        <p className="text-center font-mono text-3xl">Website made with NextJS by Mardoek Thienpondt</p>
+        <p className="text-center font-mono text-3xl">
+          Website made with NextJS by Mardoek Thienpondt
+        </p>
       </footer>
     </div>
   );
