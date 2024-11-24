@@ -94,7 +94,7 @@ export default function Home() {
           </li>
         </ul>
       </section>
-      <footer className="mt-96">
+      <footer className="my-48">
         <p className="text-center font-mono text-3xl">
           Website made with NextJS by Mardoek Thienpondt.
         </p>
