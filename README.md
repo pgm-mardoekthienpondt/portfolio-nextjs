@@ -24,3 +24,4 @@ This project uses [`next/font`](https://nextjs.org/docs/app/building-your-applic
 
 While in development, comment out export & basePath in next.config.ts
 When deploying, uncomment them.
+Also, the relative paths for "/portfolio.json" and "/img" need to be preceded with a . for deploying.
