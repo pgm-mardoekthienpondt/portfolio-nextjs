@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <div
       className="container mx-auto max-w-screen-xl py-4"
-      style={{ backgroundColor: '#cccccc' }}
+      style={{ backgroundColor: '#dddddd' }}
     >
       <h1 className="text-4xl font-bold text-center mb-8 font-mono">
         PORTFOLIO
@@ -33,7 +33,7 @@ export default function Home() {
       <hr className="my-8 border-t-2 border-gray-500 mb-16" />
       <section>
         <h3 className="font-mono text-5xl my-16 ">Programming Aspects</h3>
-        <ul>
+        <ul className={styles.skillsContainer}>
           <li>
             <h4 className="font-mono text-3xl my-8 p-4 border-l-2 border-gray-400">
               Frontend

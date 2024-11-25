@@ -20,11 +20,11 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     >
       <div
         className="top flex justify-between card__top"
-        style={{ backgroundColor: 'rgb(184 171 193)' }}
+        style={{ backgroundColor: ' #4071ab' }}
       >
         <div className="p-4">
-          <h2 className="text-3xl font-mono">{project.title}</h2>
-          <p className="text-gray-700">{project.synopsis}</p>
+          <h2 className="text-3xl font-mono text-white">{project.title}</h2>
+          <p className="text-gray-300">{project.synopsis}</p>
         </div>
         <div className="flex items-center mr-4">
           <Link
@@ -36,14 +36,16 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
         </div>
       </div>
       <div className={styles.card__image}>
-        <Image
-          className="object-cover ml-auto"
-          src={`./img/projects/${project.picture}`}
-          alt="img not found"
-          width={500}
-          height={500}
-          priority={true}
-        />
+        <Link href={project.link || "#"}>
+          <Image
+            className="object-cover ml-auto"
+            src={`./img/projects/${project.picture}`}
+            alt="img not found"
+            width={500}
+            height={500}
+            priority={true}
+          />
+        </Link>
         <div className={`${styles.overlayText} ${styles.overlayTextRight}`}>
           <p>{project.description}</p>
         </div>
@@ -64,7 +66,5 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     </li>
   );
 };
-
-
 
 export default ProjectCard;

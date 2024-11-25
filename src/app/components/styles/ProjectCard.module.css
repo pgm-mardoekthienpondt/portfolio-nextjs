@@ -1,13 +1,12 @@
 .card {
   min-width: 24rem;
-  max-width: 64rem;
   display: flex;
   flex-direction: column;
-  max-width: 30rem;
+  max-width: 20rem;
   border-collapse: separate; 
   border-radius: 1rem;
   overflow: hidden; /* Ensure child elements respect the border radius */
-  box-shadow: 5px 5px 5px 5px #aaaaaa;
+  box-shadow: 3px 4px 9px 1px #e3e3e3;
 }
 
 .card__image {
@@ -18,7 +17,8 @@
 }
 .card__image:hover img{
   transition: all 2s ease;
-  filter: brightness(0.75);
+  filter: brightness(0.5);
+  transform: scale(1.1);
 }
 .card__image:hover .overlayText {
   transform: translateX(0%);
@@ -39,11 +39,12 @@
   position: absolute;
   left: 0;
   right: 0;
-  background-color: rgb(184 171 193);
+  background-color: #4071abcf;
   width: 100%;
   height: fit-content;
   transition: 0.5s ease;
   padding: 1rem;
+  color: white;
 }
 .overlayTextLeft {
   transform: translateX(-100%);
@@ -57,11 +58,13 @@
 .overlayText ul {
   display: flex;
   gap: 0.5rem;
+  
 }
 .overlayText ul li {
-  background-color: rgba(61, 122, 67, 0.8);
+  background-color: #4071ab;
   border-radius: 0.5rem;
   padding: 0.5rem;
+  
 }
 
 .inProgress{

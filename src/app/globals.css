@@ -77,7 +77,7 @@ h6 {
 }
 
 :root {
-  --background: #cccccc;
+  --background: #dddddd;
   --foreground: #171717;
 }
 
@@ -94,3 +94,4 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+

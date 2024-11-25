@@ -6,7 +6,17 @@
     padding: 0.5rem;
 }
 .tagsContainer li{
-    background-color: rgba(61, 122, 67, 0.8);
+    background-color: #4071ab;
     border-radius: 0.5rem;
     padding: 0.5rem;
+    color: white;
+}
+
+.skillsContainer{
+    display: flex;
+
+    @media screen and (max-width: 62rem){
+        flex-direction: column;
+        
+    }
 }
